@@ -1,0 +1,63 @@
+:root {
+  /* Typography */
+  --font-family: "Helvetica", sans-serif;
+  --font-color-main: #252733;
+  --font-color-alternative: #83888F;
+
+  /* Colors */
+  --color-white: #ffffff;
+  --color-light-grey: #E3E8EB;
+  --color-light-grey2: #FAFAFA;
+  --color-primary-cta: #3679FF;
+
+  /* Borders */
+  --border-light-grey: 1px solid var(--color-light-grey);
+
+  /* Reusable margins */
+  --gap-small: 1.25rem;
+
+  font-family: var(--font-family);
+  color: var(--font-color-main);
+  background-color: var(--color-light-grey2);
+}
+
+/* Layout */
+.main {
+  margin-top: 2rem;
+  max-width:  54.375rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Typography */
+h1,
+.main-tite {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.font-small {
+  font-size: 0.875rem;
+}
+
+.font-color-alternative {
+  color: var( --font-color-alternative);
+}
+
+/* Buttons */
+.button,
+input[type="submit"] {
+  background-color: var(--color-primary-cta);
+  color: var(--color-white);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+}
+
+.button--hollow {
+  background-color: transparent;
+  border: var(--border-light-grey);
+  color: var(--font-color-alternative)
+}
